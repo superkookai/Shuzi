@@ -7,23 +7,114 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF6A441A2B9AB5AC00A3CB3A /* NumberOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6A44192B9AB5AC00A3CB3A /* NumberOptionsView.swift */; };
+		BF6A441C2B9ABC1B00A3CB3A /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6A441B2B9ABC1B00A3CB3A /* GameOverView.swift */; };
+		BF6A441E2B9AC39200A3CB3A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6A441D2B9AC39200A3CB3A /* SettingsView.swift */; };
+		BF6A44202B9AC86300A3CB3A /* ProverbModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6A441F2B9AC86300A3CB3A /* ProverbModel.swift */; };
+		BF6A44222B9ACB1E00A3CB3A /* ProverbViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6A44212B9ACB1E00A3CB3A /* ProverbViewModel.swift */; };
+		BF6A44242B9ACF5500A3CB3A /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6A44232B9ACF5500A3CB3A /* SplashScreenView.swift */; };
+		BF6A44262B9ACFBD00A3CB3A /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6A44252B9ACFBD00A3CB3A /* ContainerView.swift */; };
+		BF6A44282B9AE21E00A3CB3A /* VeryCoolTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6A44272B9AE21E00A3CB3A /* VeryCoolTextView.swift */; };
 		BF837A852B9966DB002826EA /* ShuziApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF837A842B9966DB002826EA /* ShuziApp.swift */; };
-		BF837A872B9966DB002826EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF837A862B9966DB002826EA /* ContentView.swift */; };
+		BF837A872B9966DB002826EA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF837A862B9966DB002826EA /* MainView.swift */; };
 		BF837A892B9966DC002826EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF837A882B9966DC002826EA /* Assets.xcassets */; };
 		BF837A8D2B9966DC002826EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF837A8C2B9966DC002826EA /* Preview Assets.xcassets */; };
+		BF837A9A2B996965002826EA /* ShuziTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF837A992B996965002826EA /* ShuziTests.swift */; };
+		BF837AA12B996987002826EA /* Max.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF837AA02B996987002826EA /* Max.swift */; };
+		BF9C28422B997531000302A9 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9C28412B997531000302A9 /* GameModel.swift */; };
+		BF9C28452B99781A000302A9 /* Randomness.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9C28442B99781A000302A9 /* Randomness.swift */; };
+		BF9C28552B997C29000302A9 /* eight.aiff in Resources */ = {isa = PBXBuildFile; fileRef = BF9C284A2B997C29000302A9 /* eight.aiff */; };
+		BF9C28562B997C29000302A9 /* ten.aiff in Resources */ = {isa = PBXBuildFile; fileRef = BF9C284B2B997C29000302A9 /* ten.aiff */; };
+		BF9C28572B997C29000302A9 /* nine.aiff in Resources */ = {isa = PBXBuildFile; fileRef = BF9C284C2B997C29000302A9 /* nine.aiff */; };
+		BF9C28582B997C29000302A9 /* three.aiff in Resources */ = {isa = PBXBuildFile; fileRef = BF9C284D2B997C29000302A9 /* three.aiff */; };
+		BF9C28592B997C29000302A9 /* seven.aiff in Resources */ = {isa = PBXBuildFile; fileRef = BF9C284E2B997C29000302A9 /* seven.aiff */; };
+		BF9C285A2B997C29000302A9 /* six.aiff in Resources */ = {isa = PBXBuildFile; fileRef = BF9C284F2B997C29000302A9 /* six.aiff */; };
+		BF9C285B2B997C29000302A9 /* one.aiff in Resources */ = {isa = PBXBuildFile; fileRef = BF9C28502B997C29000302A9 /* one.aiff */; };
+		BF9C285C2B997C29000302A9 /* five.aiff in Resources */ = {isa = PBXBuildFile; fileRef = BF9C28512B997C29000302A9 /* five.aiff */; };
+		BF9C285D2B997C29000302A9 /* four.aiff in Resources */ = {isa = PBXBuildFile; fileRef = BF9C28522B997C29000302A9 /* four.aiff */; };
+		BF9C285E2B997C29000302A9 /* two.aiff in Resources */ = {isa = PBXBuildFile; fileRef = BF9C28532B997C29000302A9 /* two.aiff */; };
+		BF9C285F2B997C29000302A9 /* zero.aiff in Resources */ = {isa = PBXBuildFile; fileRef = BF9C28542B997C29000302A9 /* zero.aiff */; };
+		BF9C28652B997C47000302A9 /* correct.aiff in Resources */ = {isa = PBXBuildFile; fileRef = BF9C28602B997C47000302A9 /* correct.aiff */; };
+		BF9C28662B997C47000302A9 /* yes.aiff in Resources */ = {isa = PBXBuildFile; fileRef = BF9C28612B997C47000302A9 /* yes.aiff */; };
+		BF9C28672B997C47000302A9 /* awesome.aiff in Resources */ = {isa = PBXBuildFile; fileRef = BF9C28622B997C47000302A9 /* awesome.aiff */; };
+		BF9C28682B997C47000302A9 /* bell.aiff in Resources */ = {isa = PBXBuildFile; fileRef = BF9C28632B997C47000302A9 /* bell.aiff */; };
+		BF9C28692B997C47000302A9 /* whoop.aiff in Resources */ = {isa = PBXBuildFile; fileRef = BF9C28642B997C47000302A9 /* whoop.aiff */; };
+		BF9C286D2B997C67000302A9 /* OhNo.aiff in Resources */ = {isa = PBXBuildFile; fileRef = BF9C286A2B997C67000302A9 /* OhNo.aiff */; };
+		BF9C286E2B997C67000302A9 /* incorrectAnswer.aiff in Resources */ = {isa = PBXBuildFile; fileRef = BF9C286B2B997C67000302A9 /* incorrectAnswer.aiff */; };
+		BF9C286F2B997C67000302A9 /* weak.aiff in Resources */ = {isa = PBXBuildFile; fileRef = BF9C286C2B997C67000302A9 /* weak.aiff */; };
+		BF9C28712B997CF2000302A9 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9C28702B997CF2000302A9 /* GameViewModel.swift */; };
+		BF9C28732B999499000302A9 /* GearIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9C28722B999499000302A9 /* GearIconView.swift */; };
+		BF9C28752B99981C000302A9 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9C28742B99981C000302A9 /* ScoreView.swift */; };
+		BF9C28782B999B5F000302A9 /* Chinese.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9C28772B999B5F000302A9 /* Chinese.swift */; };
+		BF9C287A2B999C5D000302A9 /* ChineseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9C28792B999C5D000302A9 /* ChineseTests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BF837A9B2B996965002826EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF837A792B9966DB002826EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF837A802B9966DB002826EA;
+			remoteInfo = Shuzi;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		BF6A44192B9AB5AC00A3CB3A /* NumberOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOptionsView.swift; sourceTree = "<group>"; };
+		BF6A441B2B9ABC1B00A3CB3A /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
+		BF6A441D2B9AC39200A3CB3A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		BF6A441F2B9AC86300A3CB3A /* ProverbModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProverbModel.swift; sourceTree = "<group>"; };
+		BF6A44212B9ACB1E00A3CB3A /* ProverbViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProverbViewModel.swift; sourceTree = "<group>"; };
+		BF6A44232B9ACF5500A3CB3A /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		BF6A44252B9ACFBD00A3CB3A /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		BF6A44272B9AE21E00A3CB3A /* VeryCoolTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeryCoolTextView.swift; sourceTree = "<group>"; };
 		BF837A812B9966DB002826EA /* Shuzi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shuzi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF837A842B9966DB002826EA /* ShuziApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuziApp.swift; sourceTree = "<group>"; };
-		BF837A862B9966DB002826EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BF837A862B9966DB002826EA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		BF837A882B9966DC002826EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF837A8A2B9966DC002826EA /* Shuzi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Shuzi.entitlements; sourceTree = "<group>"; };
 		BF837A8C2B9966DC002826EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BF837A972B996965002826EA /* ShuziTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShuziTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF837A992B996965002826EA /* ShuziTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuziTests.swift; sourceTree = "<group>"; };
+		BF837AA02B996987002826EA /* Max.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Max.swift; sourceTree = "<group>"; };
+		BF837AA22B996B64002826EA /* Shuzi.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Shuzi.xctestplan; sourceTree = "<group>"; };
+		BF9C28412B997531000302A9 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		BF9C28442B99781A000302A9 /* Randomness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Randomness.swift; sourceTree = "<group>"; };
+		BF9C284A2B997C29000302A9 /* eight.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = eight.aiff; sourceTree = "<group>"; };
+		BF9C284B2B997C29000302A9 /* ten.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = ten.aiff; sourceTree = "<group>"; };
+		BF9C284C2B997C29000302A9 /* nine.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = nine.aiff; sourceTree = "<group>"; };
+		BF9C284D2B997C29000302A9 /* three.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = three.aiff; sourceTree = "<group>"; };
+		BF9C284E2B997C29000302A9 /* seven.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = seven.aiff; sourceTree = "<group>"; };
+		BF9C284F2B997C29000302A9 /* six.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = six.aiff; sourceTree = "<group>"; };
+		BF9C28502B997C29000302A9 /* one.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = one.aiff; sourceTree = "<group>"; };
+		BF9C28512B997C29000302A9 /* five.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = five.aiff; sourceTree = "<group>"; };
+		BF9C28522B997C29000302A9 /* four.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = four.aiff; sourceTree = "<group>"; };
+		BF9C28532B997C29000302A9 /* two.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = two.aiff; sourceTree = "<group>"; };
+		BF9C28542B997C29000302A9 /* zero.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = zero.aiff; sourceTree = "<group>"; };
+		BF9C28602B997C47000302A9 /* correct.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = correct.aiff; sourceTree = "<group>"; };
+		BF9C28612B997C47000302A9 /* yes.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = yes.aiff; sourceTree = "<group>"; };
+		BF9C28622B997C47000302A9 /* awesome.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = awesome.aiff; sourceTree = "<group>"; };
+		BF9C28632B997C47000302A9 /* bell.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = bell.aiff; sourceTree = "<group>"; };
+		BF9C28642B997C47000302A9 /* whoop.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = whoop.aiff; sourceTree = "<group>"; };
+		BF9C286A2B997C67000302A9 /* OhNo.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = OhNo.aiff; sourceTree = "<group>"; };
+		BF9C286B2B997C67000302A9 /* incorrectAnswer.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = incorrectAnswer.aiff; sourceTree = "<group>"; };
+		BF9C286C2B997C67000302A9 /* weak.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = weak.aiff; sourceTree = "<group>"; };
+		BF9C28702B997CF2000302A9 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		BF9C28722B999499000302A9 /* GearIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearIconView.swift; sourceTree = "<group>"; };
+		BF9C28742B99981C000302A9 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		BF9C28772B999B5F000302A9 /* Chinese.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chinese.swift; sourceTree = "<group>"; };
+		BF9C28792B999C5D000302A9 /* ChineseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChineseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BF837A7E2B9966DB002826EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF837A942B996965002826EA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,7 +127,9 @@
 		BF837A782B9966DB002826EA = {
 			isa = PBXGroup;
 			children = (
+				BF837AA22B996B64002826EA /* Shuzi.xctestplan */,
 				BF837A832B9966DB002826EA /* Shuzi */,
+				BF837A982B996965002826EA /* ShuziTests */,
 				BF837A822B9966DB002826EA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				BF837A812B9966DB002826EA /* Shuzi.app */,
+				BF837A972B996965002826EA /* ShuziTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,8 +146,14 @@
 		BF837A832B9966DB002826EA /* Shuzi */ = {
 			isa = PBXGroup;
 			children = (
+				BF9C28762B999B4A000302A9 /* Chinese Support */,
+				BF9C28462B997B76000302A9 /* Sounds */,
+				BF9C28432B9977D4000302A9 /* Extension */,
+				BF9C28402B9974C6000302A9 /* Model */,
+				BF9C283F2B9974BD000302A9 /* ViewModel */,
+				BF9C283E2B9974B4000302A9 /* View */,
 				BF837A842B9966DB002826EA /* ShuziApp.swift */,
-				BF837A862B9966DB002826EA /* ContentView.swift */,
+				BF837AA02B996987002826EA /* Max.swift */,
 				BF837A882B9966DC002826EA /* Assets.xcassets */,
 				BF837A8A2B9966DC002826EA /* Shuzi.entitlements */,
 				BF837A8B2B9966DC002826EA /* Preview Content */,
@@ -67,6 +167,115 @@
 				BF837A8C2B9966DC002826EA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BF837A982B996965002826EA /* ShuziTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF837A992B996965002826EA /* ShuziTests.swift */,
+				BF9C28792B999C5D000302A9 /* ChineseTests.swift */,
+			);
+			path = ShuziTests;
+			sourceTree = "<group>";
+		};
+		BF9C283E2B9974B4000302A9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF837A862B9966DB002826EA /* MainView.swift */,
+				BF9C28722B999499000302A9 /* GearIconView.swift */,
+				BF9C28742B99981C000302A9 /* ScoreView.swift */,
+				BF6A44192B9AB5AC00A3CB3A /* NumberOptionsView.swift */,
+				BF6A441B2B9ABC1B00A3CB3A /* GameOverView.swift */,
+				BF6A441D2B9AC39200A3CB3A /* SettingsView.swift */,
+				BF6A44232B9ACF5500A3CB3A /* SplashScreenView.swift */,
+				BF6A44252B9ACFBD00A3CB3A /* ContainerView.swift */,
+				BF6A44272B9AE21E00A3CB3A /* VeryCoolTextView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF9C283F2B9974BD000302A9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BF9C28702B997CF2000302A9 /* GameViewModel.swift */,
+				BF6A44212B9ACB1E00A3CB3A /* ProverbViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BF9C28402B9974C6000302A9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF9C28412B997531000302A9 /* GameModel.swift */,
+				BF6A441F2B9AC86300A3CB3A /* ProverbModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF9C28432B9977D4000302A9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BF9C28442B99781A000302A9 /* Randomness.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		BF9C28462B997B76000302A9 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				BF9C28492B997B9D000302A9 /* Digit Sounds */,
+				BF9C28482B997B8E000302A9 /* Sounds of Joy */,
+				BF9C28472B997B81000302A9 /* Incorrect */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		BF9C28472B997B81000302A9 /* Incorrect */ = {
+			isa = PBXGroup;
+			children = (
+				BF9C286B2B997C67000302A9 /* incorrectAnswer.aiff */,
+				BF9C286A2B997C67000302A9 /* OhNo.aiff */,
+				BF9C286C2B997C67000302A9 /* weak.aiff */,
+			);
+			path = Incorrect;
+			sourceTree = "<group>";
+		};
+		BF9C28482B997B8E000302A9 /* Sounds of Joy */ = {
+			isa = PBXGroup;
+			children = (
+				BF9C28622B997C47000302A9 /* awesome.aiff */,
+				BF9C28632B997C47000302A9 /* bell.aiff */,
+				BF9C28602B997C47000302A9 /* correct.aiff */,
+				BF9C28642B997C47000302A9 /* whoop.aiff */,
+				BF9C28612B997C47000302A9 /* yes.aiff */,
+			);
+			path = "Sounds of Joy";
+			sourceTree = "<group>";
+		};
+		BF9C28492B997B9D000302A9 /* Digit Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				BF9C284A2B997C29000302A9 /* eight.aiff */,
+				BF9C28512B997C29000302A9 /* five.aiff */,
+				BF9C28522B997C29000302A9 /* four.aiff */,
+				BF9C284C2B997C29000302A9 /* nine.aiff */,
+				BF9C28502B997C29000302A9 /* one.aiff */,
+				BF9C284E2B997C29000302A9 /* seven.aiff */,
+				BF9C284F2B997C29000302A9 /* six.aiff */,
+				BF9C284B2B997C29000302A9 /* ten.aiff */,
+				BF9C284D2B997C29000302A9 /* three.aiff */,
+				BF9C28532B997C29000302A9 /* two.aiff */,
+				BF9C28542B997C29000302A9 /* zero.aiff */,
+			);
+			path = "Digit Sounds";
+			sourceTree = "<group>";
+		};
+		BF9C28762B999B4A000302A9 /* Chinese Support */ = {
+			isa = PBXGroup;
+			children = (
+				BF9C28772B999B5F000302A9 /* Chinese.swift */,
+			);
+			path = "Chinese Support";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,6 +298,24 @@
 			productReference = BF837A812B9966DB002826EA /* Shuzi.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BF837A962B996965002826EA /* ShuziTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF837A9F2B996965002826EA /* Build configuration list for PBXNativeTarget "ShuziTests" */;
+			buildPhases = (
+				BF837A932B996965002826EA /* Sources */,
+				BF837A942B996965002826EA /* Frameworks */,
+				BF837A952B996965002826EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF837A9C2B996965002826EA /* PBXTargetDependency */,
+			);
+			name = ShuziTests;
+			productName = ShuziTests;
+			productReference = BF837A972B996965002826EA /* ShuziTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -101,6 +328,10 @@
 				TargetAttributes = {
 					BF837A802B9966DB002826EA = {
 						CreatedOnToolsVersion = 15.3;
+					};
+					BF837A962B996965002826EA = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = BF837A802B9966DB002826EA;
 					};
 				};
 			};
@@ -118,6 +349,7 @@
 			projectRoot = "";
 			targets = (
 				BF837A802B9966DB002826EA /* Shuzi */,
+				BF837A962B996965002826EA /* ShuziTests */,
 			);
 		};
 /* End PBXProject section */
@@ -127,8 +359,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF9C285A2B997C29000302A9 /* six.aiff in Resources */,
+				BF9C28672B997C47000302A9 /* awesome.aiff in Resources */,
+				BF9C286F2B997C67000302A9 /* weak.aiff in Resources */,
 				BF837A8D2B9966DC002826EA /* Preview Assets.xcassets in Resources */,
+				BF9C28662B997C47000302A9 /* yes.aiff in Resources */,
+				BF9C285E2B997C29000302A9 /* two.aiff in Resources */,
+				BF9C286D2B997C67000302A9 /* OhNo.aiff in Resources */,
 				BF837A892B9966DC002826EA /* Assets.xcassets in Resources */,
+				BF9C285C2B997C29000302A9 /* five.aiff in Resources */,
+				BF9C28692B997C47000302A9 /* whoop.aiff in Resources */,
+				BF9C28582B997C29000302A9 /* three.aiff in Resources */,
+				BF9C28592B997C29000302A9 /* seven.aiff in Resources */,
+				BF9C285F2B997C29000302A9 /* zero.aiff in Resources */,
+				BF9C28652B997C47000302A9 /* correct.aiff in Resources */,
+				BF9C286E2B997C67000302A9 /* incorrectAnswer.aiff in Resources */,
+				BF9C28572B997C29000302A9 /* nine.aiff in Resources */,
+				BF9C28552B997C29000302A9 /* eight.aiff in Resources */,
+				BF9C28682B997C47000302A9 /* bell.aiff in Resources */,
+				BF9C28562B997C29000302A9 /* ten.aiff in Resources */,
+				BF9C285B2B997C29000302A9 /* one.aiff in Resources */,
+				BF9C285D2B997C29000302A9 /* four.aiff in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF837A952B996965002826EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,12 +397,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF837A872B9966DB002826EA /* ContentView.swift in Sources */,
+				BF9C28712B997CF2000302A9 /* GameViewModel.swift in Sources */,
+				BF6A441C2B9ABC1B00A3CB3A /* GameOverView.swift in Sources */,
+				BF6A44242B9ACF5500A3CB3A /* SplashScreenView.swift in Sources */,
+				BF9C28752B99981C000302A9 /* ScoreView.swift in Sources */,
+				BF837A872B9966DB002826EA /* MainView.swift in Sources */,
+				BF6A44202B9AC86300A3CB3A /* ProverbModel.swift in Sources */,
+				BF9C28732B999499000302A9 /* GearIconView.swift in Sources */,
+				BF9C28452B99781A000302A9 /* Randomness.swift in Sources */,
+				BF9C28422B997531000302A9 /* GameModel.swift in Sources */,
+				BF6A44282B9AE21E00A3CB3A /* VeryCoolTextView.swift in Sources */,
+				BF6A441A2B9AB5AC00A3CB3A /* NumberOptionsView.swift in Sources */,
+				BF837AA12B996987002826EA /* Max.swift in Sources */,
+				BF6A441E2B9AC39200A3CB3A /* SettingsView.swift in Sources */,
+				BF6A44262B9ACFBD00A3CB3A /* ContainerView.swift in Sources */,
+				BF6A44222B9ACB1E00A3CB3A /* ProverbViewModel.swift in Sources */,
 				BF837A852B9966DB002826EA /* ShuziApp.swift in Sources */,
+				BF9C28782B999B5F000302A9 /* Chinese.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF837A932B996965002826EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF837A9A2B996965002826EA /* ShuziTests.swift in Sources */,
+				BF9C287A2B999C5D000302A9 /* ChineseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF837A9C2B996965002826EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF837A802B9966DB002826EA /* Shuzi */;
+			targetProxy = BF837A9B2B996965002826EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		BF837A8E2B9966DC002826EA /* Debug */ = {
@@ -337,6 +627,50 @@
 			};
 			name = Release;
 		};
+		BF837A9D2B996965002826EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T9MD4URZFH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.superkookai.ShuziTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shuzi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Shuzi";
+			};
+			name = Debug;
+		};
+		BF837A9E2B996965002826EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T9MD4URZFH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.superkookai.ShuziTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shuzi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Shuzi";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -354,6 +688,15 @@
 			buildConfigurations = (
 				BF837A912B9966DC002826EA /* Debug */,
 				BF837A922B9966DC002826EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF837A9F2B996965002826EA /* Build configuration list for PBXNativeTarget "ShuziTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF837A9D2B996965002826EA /* Debug */,
+				BF837A9E2B996965002826EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

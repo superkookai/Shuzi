@@ -1,0 +1,34 @@
+{
+  "configurations" : [
+    {
+      "id" : "C6239972-1B4B-4D44-BA4E-0DD1BEE5B36F",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "environmentVariableEntries" : [
+      {
+        "key" : "IDEPreferLogStreaming",
+        "value" : "YES"
+      }
+    ],
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Shuzi.xcodeproj",
+      "identifier" : "BF837A802B9966DB002826EA",
+      "name" : "Shuzi"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Shuzi.xcodeproj",
+        "identifier" : "BF837A962B996965002826EA",
+        "name" : "ShuziTests"
+      }
+    }
+  ],
+  "version" : 1
+}
